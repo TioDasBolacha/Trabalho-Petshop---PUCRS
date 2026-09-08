@@ -1,0 +1,364 @@
+/*geral*/
+
+body {
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #198754;
+}
+
+header nav {
+    display: flex;
+    gap: 8px;
+}
+
+header nav a {
+    text-decoration: none;
+    background-color: #198754;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    background-color: #157347;
+    color: white;
+}
+
+
+footer {
+    background-color: #ffffff;
+    margin-top: 40px;
+    padding: 25px 20px;
+    text-align: center;
+    border-top: 1px solid #dee2e6;
+}
+
+footer .footer-info p {
+    margin: 5px 0;
+}
+
+.voltar-topo {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    background-color: #198754;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.voltar-topo:hover {
+    background-color: #157347;
+    color: white;
+}
+
+/*Pag cadastro*/
+#formCadastro {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#formCadastro button[type="submit"] {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#formCadastro h3 {
+    border-bottom: 2px solid #198754;
+    padding-bottom: 8px;
+}
+
+/*Pag inicio*/
+.carousel-img {
+    height: 350px;
+    object-fit: contain;
+}
+
+#carouselPetshop {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #e9ecef;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 0 4px 12px #198754;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #198754;
+    border-radius: 50%;
+    padding: 20px;
+    background-size: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.atalhos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+.card-atalho {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #212529;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-atalho:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px #198754;
+}
+
+.card-atalho img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.card-atalho h3 {
+    margin-bottom: 10px;
+}
+
+.card-atalho p {
+    margin: 0;
+}
+
+.inicio {
+    text-align: center;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.inicio h2 {
+    margin-bottom: 15px;
+}
+
+.inicio .descricao {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#saudacao {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#dataHora {
+    margin: 0;
+}
+
+/*Pag produtos*/
+.categoria-produtos {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.categoria-produtos h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.produtos-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.produto-card {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px #198754;
+}
+
+.produto-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.produto-card h3 {
+    margin-bottom: 10px;
+}
+
+.produto-card p {
+    margin-bottom: 8px;
+}
+
+.produto-card .preco {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+main {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.categoria-produtos:first-child {
+    margin-top: 30px;
+}
+
+.categoria-produtos + .categoria-produtos {
+    margin-top: 60px;
+}
+
+/*Pag serviços*/
+.categoria-servicos {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.categoria-servicos h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.servicos-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.servico-card {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px #198754;
+}
+
+.servico-card h3 {
+    margin-bottom: 15px;
+}
+
+.servico-card p {
+    margin-bottom: 10px;
+}
+
+.servico-card .preco {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.servico-card .tele-busca {
+    font-weight: bold;
+}
+
+.servico-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+/*Pag contato*/
+.contato {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    flex:1 ;
+}
+
+.contato h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contato-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contato-card {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px #198754;
+}
+
+.contato-card h3 {
+    margin-bottom: 15px;
+}
+
+.contato-card p {
+    margin: 0;
+}
+
+
+/*acessibilidade*/
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .atalhos {
+        flex-direction: column;
+        margin: 30px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .servicos-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .produtos-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .contato-container {
+        flex-direction: column;
+    }
+}

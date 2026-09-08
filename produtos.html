@@ -1,95 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+       <link rel="stylesheet" href="css/style.css">
+
 <title>Produtos</title>
 </head>
 
-<body>
+<body id="topo">
 
 <header>
+    <h1>PetShop Amigo Fiel</h1>
 
-<h1>PetShop DogCare</h1>
-
-<nav>
-<a href="index.html">Início</a> |
-<a href="produtos.html">Produtos</a> |
-<a href="servicos.html">Serviços</a> |
-<a href="contato.html">Contato</a>
-</nav>
-
-<hr>
-
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="contato.html">Contato</a>
+        <a href="cadastro.html">Cadastro</a>
+    </nav>
 </header>
 
 <main>
 
+<section class="categoria-produtos">
+
 <h2>Acessórios</h2>
 
-<img src="img/png-CamaCachorro.png" alt="CamaCachorro">
-<p><strong>Cama para Cachorro</strong></p>
-<p>Confortável e resistente.</p>
-<p>R$ 89,90</p>
+       <div class="produtos-container">
+              <div class="produto-card">
+                     <img src="img/png-CamaCachorro.png" alt="Cama para cachorro">
+                     <h3>Cama para Cachorro</h3>
+                     <p>Confortável e resistente.</p>
+                     <p class="preco">R$ 89,90</p>
+              </div>
 
-<img src="img/png-BriquedoCachorro.png" alt="BrinquedoCachorro">
-<p><strong>Brinquedo Mordedor</strong></p>
-<p>Ideal para entretenimento.</p>
-<p>R$ 24,90</p>
+              <div class="produto-card">
+                     <img src="img/png-BriquedoCachorro.png" alt="Brinquedo mordedor para cachorro">
+                     <h3>Brinquedo Mordedor</h3>
+                     <p>Ideal para entretenimento.</p>
+                     <p class="preco">R$ 24,90</p>
+              </div>
+       </div>
 
-<hr>
+</section>
+
+<section class="categoria-produtos">
 
 <h2>Rações</h2>
 
-<img src="img/png-RacaoCachorro.png" alt="RacaoCachorro">
-<p><strong>Ração para Cães</strong></p>
-<p>Nutrição completa para cães.</p>
-<p>R$ 99,90</p>
+       <div class="produtos-container">
+              <div class="produto-card">
+                     <img src="img/png-RacaoCachorro.png" alt="Ração para cães">
+                     <h3>Ração para cães</h3>
+                     <p>Nutrição completa para cães.</p>
+                     <p class="preco">R$ 99,90</p>
+              </div>
+              <div class="produto-card"><img src="img/png-RacaoGato.png" alt="Ração para gatos">
+                     <h3>Ração para gatos</h3>
+                     <p>Alimentação balanceada.</p>
+                     <p class="preco">R$ 89,90</p>
+              </div>
+</div>
 
-<img src="img/png-RacaoGato.png" alt="RacaoGatos">
-<p><strong>Ração para Gatos</strong></p>
-<p>Alimentação balanceada.</p>
-<p>R$ 89,90</p>
+</section>
 
-<hr>
+<section class="categoria-produtos">
 
 <h2>Higiene e Limpeza</h2>
 
-<img src="img/png-AreiaGato.png" alt="AreiaGato">
-<p><strong>Areia para Gatos</strong></p>
-<p>Areia de alta qualidade.</p>
-<p>R$ 110,90</p>
+       <div class="produtos-container">
+              <div class="produto-card"><img src="img/png-AreiaGato.png" alt="Areia para gatos">
+                     <h3>Areia para gatos</h3>
+                     <p>Pacote com 10 Kg.</p>
+                     <p class="preco">R$ 110,90</p></div>
+              <div class="produto-card">
+                     <img src="img/png-FraldaPet.png" alt="Fralda para Pet">
+                     <h3>Fralda para pet</h3>
+                     <p>Pacote com 12 unidades.</p>
+                     <p class="preco">R$ 35,90</p>
+              </div>
+       </div>
 
-<img src="img/png-FraldaPet.png" alt="FraldaPet">
-<p><strong>Fralda Pet</strong></p>
-<p>Pacote com 12 unidades.</p>
-<p>R$ 35,90</p>
+</section>
 
 </main>
 
 <footer>
 
-<hr>
+       <div class="footer-info">
+              <p>© 2026 PetShop Amigo Fiel</p>
+              <p>Autor: Victor F</p>
+              <p>Contato: contato@AmigoFiel.com</p>
+              <p>Telefone: (51) 5555-5555</p>
+       </div>
 
-<p>© 2026 PetShop DogCare</p>
-
-<p>
-Autor: Victor F
-</p>
-
-<p>
-Contato: contato@dogcare.com
-</p>
-
-<p>
-Telefone: (51) 5555-5555
-</p>
-
-<nav>
-<a href="index.html">Início</a> |
-<a href="produtos.html">Produtos</a> |
-<a href="servicos.html">Serviços</a> |
-<a href="contato.html">Contato</a>
-</nav>
+       <a href="#topo" class="voltar-topo">↑ Voltar ao topo</a>
 
 </footer>
 
